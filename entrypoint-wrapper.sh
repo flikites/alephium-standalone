@@ -3,6 +3,8 @@
 ALEPHIUM_HOME=${ALEPHIUM_HOME:-/alephium-home/.alephium}
 ALEPHIUM_NETWORK=${ALEPHIUM_NETWORK:-mainnet}
 ALEPHIUM_API_KEY=${ALEPHIUM_API_KEY:-}  # new env var for API key
+ALEPHIUM_NETWORK_COORDINATOR_ADDRESS=${ALEPHIUM_NETWORK_COORDINATOR_ADDRESS}
+ALEPHIUM_NETWORK_INTERNAL_ADDRESS=${ALEPHIUM_NETWORK_INTERNAL_ADDRESS}
 
 # Call snapshot-loader.sh and ensure it completed successfully, stopping the execution otherwise.
 if ! ./snapshot-loader.sh
