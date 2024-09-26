@@ -38,5 +38,5 @@ fi
 
 echo "Now starting Alephium full node!"
 
-# Call the official entrypoint of the parent image alephium/alephium
+# Call the official entrypoint of the parent image `alephium/alephium`
 exec /entrypoint.sh "$@"
