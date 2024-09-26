@@ -24,7 +24,12 @@ A basic [docker-compose.yml](./docker-compose.yml) show how to quickly run the c
 | ALEPHIUM_HOME                  | `/alephium-home/.alephium` | Path, inside the official `alephium/alephium`, there the full node stores its data. See the official [Dockerfile.release](https://github.com/alephium/alephium/blob/master/docker/release/Dockerfile.release) for more details. |
 | ALEPHIUM_NETWORK               | `mainnet`                  | Which network to load the snapshots for. Possible values are mainnet and testnet. !! If you set your own `user.conf`, this value should match `alephium.network.network-id` in `user.conf` !! (mainnet = 0, testnet = 1)        |
 | ALEPHIUM_FORCE_RELOAD_SNAPSHOT | `0`                        | If set to `1`, the database will be dropped at every reboot. Useful for testing, not recommended in working setups.                                                                                                             |
+| ALEPHIUM_NETWORK_BIND_ADDRESS  | `0.0.0.0:39973`                   | Define which network address and port to bind to.    
+| ALEPHIUM_NETWORK_INTERNAL_ADDRESS  | `not set`                   | Define which internal address and port to use.    
+| ALEPHIUM_NETWORK_INTERNAL_ADDRESS  | `not set`                   | Define which coordinator address and port to use.    
 | NODE_TYPE                      | `pruned`                   | Define which snapshot to load between the pruned or the full snapshots. Pruned snapshot decrease the resources rquirement to ~50GB of disk storage.                                                                      |
+
+
 
 # Using the standalone script
 
