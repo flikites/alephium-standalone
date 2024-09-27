@@ -32,7 +32,7 @@ if [ -n "$ALEPHIUM_API_KEY" ]; then
 fi
 
 # Update bind address in user.conf
-sed -i "s|^alephium.network.bind-address = .*|alephium.network.bind-address = \"0.0.0.0:$ALEPHIUM_NETWORK_BIND_ADDRESS\"|" "$ALEPHIUM_HOME/user.conf"
+sed -i "s|^alephium.network.bind-address = .*|alephium.network.bind-address = \"$ALEPHIUM_NETWORK_BIND_ADDRESS\"|" "$ALEPHIUM_HOME/user.conf"
 
 # Add the coordinator address if it is set and doesn't already exist
 if [ -n "$ALEPHIUM_NETWORK_COORDINATOR_ADDRESS" ]; then
