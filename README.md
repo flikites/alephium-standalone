@@ -26,7 +26,7 @@ A basic [docker-compose.yml](./docker-compose.yml) show how to quickly run the c
 | ALEPHIUM_FORCE_RELOAD_SNAPSHOT | `0`                        | If set to `1`, the database will be dropped at every reboot. Useful for testing, not recommended in working setups.                                                                                                             |
 | ALEPHIUM_NETWORK_BIND_ADDRESS  | `0.0.0.0:39973`                   | Define which network address and port to bind to.    
 | ALEPHIUM_NETWORK_INTERNAL_ADDRESS  | `not set`                   | Define which internal address and port to use.    
-| ALEPHIUM_NETWORK_INTERNAL_ADDRESS  | `not set`                   | Define which coordinator address and port to use.    
+| ALEPHIUM_NETWORK_COORDINATOR_ADDRESS  | `not set`                   | Define which coordinator address and port to use.    
 | NODE_TYPE                      | `pruned`                   | Define which snapshot to load between the pruned or the full snapshots. Pruned snapshot decrease the resources rquirement to ~50GB of disk storage.                                                                      |
 
 
